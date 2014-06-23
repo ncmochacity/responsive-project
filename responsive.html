@@ -10,7 +10,9 @@
   <body>
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
-        <li class="name"><a href="#"><h1>Responsive</a></h1></li>
+        <li class="name"><a href="#"><h1>Sushi Yamagata </a></h1></li>
+        
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
       <section class="top-bar-section">
         <ul class="left">
@@ -22,22 +24,73 @@
           <li class="has-dropdown">
             <a href="#">Menu</a>
             <ul class="dropdown">
-              <li>
-                <a href="#">Submenu</a>
-                <a href="#">Submenu</a>
-                <a href="#">Submenu</a>
-                <a href="#">Submenu</a>
+              <li><a href="#">Sushi</a></li>
+              <li class="has-dropdown"><a href="#">Steak</a>
+                <ul class="dropdown">
+                  <li><a href="#">New York Strip</a></li>
+                  <li><a href="#">Center cut mignon</a></li>
+                  <li><a href="#">Premium 10 oz sirloin</a></li>
+                  <li><a href="#">12 oz Ribeye Steak</a></li>
+                </ul>
               </li>
+              <li><a href="#">Ramen</a></li>
+              <li><a href="#">Seafood</a></li>
             </ul>
           </li>
           <li class="divider"></li>
           <li><a href="#">Reservations</a></li>
+        </ul>
+        <ul class="right">
+          <li class="has-form">
+          <div class="row collapse">
+            <div class="large-8 small-9 columns">
+            <input type="text" placeholder="Find Stuff">
+            </div>
+            <div class="large-4 small-3 columns">
+              <a href="#" class="alert button expand">Search</a>
+            </div>
+          </div>
+          </li>
+          <li class="has-form">
+            <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+          </li>
         </ul>
       </section>
     </nav>
     <div class="row">
       <div class="large-12 columns">
         <h1>Responsive Project</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        
+        <dl class="tabs" data-tab>
+          <dd class="active"><a href="#panel2-1">Tab 1</a></dd>
+          <dd><a href="#panel2-2">Tab 2</a></dd>
+          <dd><a href="#panel2-3">Tab 3</a></dd>
+          <dd><a href="#panel2-4">Tab 4</a></dd>
+        </dl>
+        <div class="tabs-content">
+        <div class="content active" id="panel2-1">
+          <ul class="side-nav">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="content" id="panel2-2">
+          <p>Second panel content goes here...</p>
+        </div>
+        <div class="content" id="panel2-3">
+          <p>Third panel content goes here...</p>
+        </div>
+        <div class="content" id="panel2-4">
+          <p>Fourth panel content goes here...</p>
+        </div>
+      </div>
       </div>
     </div>
     <div class="row">
@@ -61,20 +114,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="large-4 small-6 columns">
-        <div class="panel">
-          <img src="img/bibimbap.jpg"/>
-        </div>
+      <div class="large-4 small-4 columns">
+          <a href="#"><img src="img/bibimbap.jpg"/></a>
+          
+          
       </div>
-      <div class="large-4 small-6 columns">
-        <div class="panel">
-          <img src="img/sushi.jpg"/>
-        </div>
+      <div class="large-4 small-4 columns">
+          <a href="#"><img src="img/sushi.jpg"/></a>
       </div>
-      <div class="large-4 small-6 columns">
-        <div class="panel">
-          <img src="img/newyorkstrip.jpg"/>
-        </div>
+      <div class="large-4 small-4 columns">
+          <a href="#"><img src="img/newyorkstrip.jpg"/></a>
       </div>
       
     </div> 
