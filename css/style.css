@@ -1,5 +1,136 @@
-.custom-button-class {
-  height:50px;
-  background-color: red;
-  padding: 10px;
+body{
+	font-family: "Roboto",sans-serif;
+	font-weight:300;
+	background-color:#dfdfdf;
 }
+p{
+	font-family: "Roboto",sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+
+}
+h1{
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 800;
+	font-size: 3.8em;
+}
+
+#main{
+	padding:7%;
+	width:100%;
+}
+#contact{
+	width:100%;
+	background-color: #cccccc;
+	padding:40px;
+	margin:0 5px 10px 5px;
+	margin:50px auto;
+	border: 6px solid #fff;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+#contact h1{
+	font-size: 3.5em;
+}
+#contact input:focus,select:focus,textarea:focus{
+	border: 1px solid #fff;
+    background-color: #eee;
+}
+#contact textarea{
+	height:150px;
+	resize:none;
+}
+#contact label{
+	display: block;
+}
+#contact .required{
+	font-weight: bold;
+}
+#contact #submit-button{
+	width:100px;
+	background-color: #66cccc;
+	color: #fff;
+	display: block;
+	height:40px;
+	text-align: center;
+	float: right;
+}
+#contact #submit-button:hover{
+	background-color: #33cccc;
+}
+#contact #submit-button:active{
+	position:relative;
+	top:1px;
+}
+#contact #loading{
+	background-image: url(../img/loading.png);
+	width:112px;
+	height:52px;
+	display: block;
+	position:absolute;
+	right:130px;
+	bottom:16px;
+	display:none;
+}
+@media screen and (min-width:760px){
+	#contact {
+		width:645px;
+	}
+	#contact #loading{
+		right:248px;
+	}
+}
+#contact #errors{
+	padding:10px;
+	margin:25px 0px;
+	display:block;
+	display:none;
+	width:132px;
+	background: url(../img/error.png);
+	background-repeat: no-repeat;
+	position:relative;
+	top:10px;
+
+}
+#contact #errors li{
+	padding:2px;
+	list-style: none;
+	left:80px;
+	position:relative;
+}
+#contact #errors li:before{
+	content: " - ";
+}
+#contact #errors #info{
+	font-weight: bold;
+	position:relative;
+	left:80px;
+	top:-10px;
+}
+#contact #errors #info:before{
+	content:"";
+}
+#contact #success{
+	padding:25px 10px;
+	margin:25px 0px;
+	display:block;
+	width:132px;
+	background-image: url(../img/success.png);
+	background-repeat: no-repeat;
+	display:none;
+	position:relative;
+	top:10px;
+	
+}
+#contact #errors.visible, #contact #success.visible{
+	display:block;
+}
+
+
+
+
+
+
+
